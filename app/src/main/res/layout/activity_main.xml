@@ -12,12 +12,14 @@
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/giessBtn"
+            android:onClick="doGuess"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:text="Guess"/>
         <EditText
+            android:id="@+id/inputText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -29,22 +31,26 @@
 
     <LinearLayout
         android:id="@+id/bottom"
+
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
         <Button
+            android:onClick="doReset"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Reset"
             android:layout_weight="1"/>
         <Button
+            android:onClick="doSeting"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Seting"
             android:layout_weight="1"/>
         <Button
+            android:onClick="doExit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Exit"
@@ -54,6 +60,10 @@
 
     </LinearLayout>
     <TextView
+        android:id="@+id/TextView"
+        android:text="Test"
+        android:textSize="35dp"
+        android:textColor="#000"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/top"
